@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Shop review</title>
+
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+        <link rel="stylesheet" href="{% static 'css/shop_review.css' %}">
+        <link rel="stylesheet" href="{% static 'fonts/font_Ubuntu/stylesheet.css' %}">
+        <link rel="stylesheet" href="{% static 'fonts/font_Inter/stylesheet.css' %}">
+
+        <script src="{% static 'js/index.js' %}"></script>
+
+    </head>
+
+    <body>
+
+        <div class="background">
+            
+            <div class="wrapper">
+
+                <div class="content">
+
+                    <div class="header">
+
+                        <div class="menu-header">
+                            <button onclick="myFunction()" class="dropdown-toggle">
+                                <img src="{% static 'pics/Group 1.png' %}" alt="">
+                            </button>
+                        </div>
+
+                        <div id="myDropdown" class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Продавцы</a></li>
+                                <li><a class="dropdown-item" href="#">Услуги</a></li>
+                                <li><a class="dropdown-item" href="#">Товары</a></li>
+                            </ul>
+                        </div>
+
+                        <a href="http://127.0.0.1:8000/vitrina/" target="_self"><div class="logo"><p>Витрина</p></div></a>
+
+                        <div class="search">
+
+                             <form action="" tager="_self">
+                                <input required type="text" placeholder="Поиск">
+                                <button type="submit">Искать</button>
+                            </form>
+
+                        </div>
+
+                        <div class="sign-in">
+                            
+                            {% if request.user.is_authenticated %}
+                            <a href="{% url 'profile' %}" tager="_self">
+                                <button type="submit">{{ request.user.username }}</button>
+                            </a>
+                            {% else %}
+                            <a href="authorization_page.html" tager="_self">
+                                <button type="submit">Войти</button>
+                            </a>
+                            {% endif %}
+
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="navigation-string">
+                        <p>Магазин {{ shops.shop_name }} </p>
+                    </div>
+
+                    <div class="main">
+
+                        <div class="main-navigation">
+
+                            <button type="submit" id="inversion">Все карточки</button>
+                            <button type="submit">Акции</button>
+                            <button type="submit">Связь</button>
+                            <button type="submit">О продавце</button>
+
+                        </div>
+                        
+                        <div class="shop">
+
+                            <div class="banner">
+                                <img src="{{ shops.banner.url }}" alt="">
+                            </div>
+
+                            <div class="search-options">
+                                <p> {{ shops.shop_description }} </p>
+                            </div>
+
+                            <div class="products-cards">
+
+                                {% for product in products %}
+
+                                     
+                                    <div class="card">
+                                        <a href="{{ product.get_absolute_url }}" target="_self">
+                                   <img src="{{ product.main_photo.url }}" alt="" id="miniphoto">
+                                    <p id="price"> {{ product.price }} </p>
+                                    <p id="description"> {{ product.title }} </p></a>
+
+                                    <div class="review">
+                                      <div class="stars">
+                                        <img src="{% static 'pics/Star 5.svg' %}" alt="" id="star">
+                                        <img src="{% static 'pics/Star 5.svg' %}" alt="" id="star">
+                                        <img src="{% static 'pics/Star 5.svg' %}" alt="" id="star">
+                                        <img src="{% static 'pics/Star 5.svg' %}" alt="" id="star">
+                                        <img src="{% static 'pics/Star 5.svg' %}" alt="" id="star">
+                                      </div>  
+                                      <p id="number">0</p>
+                                    </div>
+
+                                </div></a>
+
+                                {% endfor %}
+
+                            </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <footer></footer>   
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
+    

@@ -1,0 +1,108 @@
+.reg {
+    width: 1180px;
+    height: 817px;
+    margin: 50px 60px 0px 60px;
+}
+
+.reg .form-reg {
+    width: 300px;
+    height: 817px;
+    padding-left: 400px
+}
+
+.reg .form {
+    margin-bottom: 30px
+}
+.reg button {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #FFFFFF;
+    background: #6791FF;
+    border: 0px;
+    box-sizing: border-box;
+    border-radius: 40px;
+}
+
+.form input {
+    width: 300px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+    
+    color: #6791FF;
+
+    height: 30px;
+    background: #FFFFFF;
+    border: 2px solid #6791FF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 21px 32px 21px 32px;
+}
+
+.form-label {
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #6791FF;
+    min-width: 150px;
+}
+
+ul li {
+    list-style: none;
+    padding: 0;
+    color: #CC0000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+
+.reg .in {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #6791FF;
+    min-width: 150px;
+}
+
+.autho {
+    margin-top: 25px;
+}
+
+.autho .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.reg .or {
+    margin: 0px 0px 0px 83px;
+}
+
+.reg .in {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #6791FF;
+    min-width: 150px;
+}
+

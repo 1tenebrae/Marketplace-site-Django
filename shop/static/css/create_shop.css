@@ -1,0 +1,83 @@
+.main {
+    padding: 0px 60px 0px 60px;
+    height: 774px;
+}
+
+
+.navigation-string {
+    margin: 18px 60px 18px 60px;
+    width: 1180px;
+    height: 40px;
+    left: 60px;
+    top: 101px;
+    background: #FFFFFF;
+    border: 1px solid #6791FF;
+    box-sizing: border-box;
+    border-radius: 40px;
+    padding: 7px 49px 9px 49px;
+}
+
+.navigation-string p {
+    position: absolute;
+    width: 100%;
+    height: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #6791FF;
+    margin: 0px;
+
+}
+
+.main p {
+    margin-bottom: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.main button {
+    height: 30px;
+    width: 150px;
+    background: #FFFFFF;
+    border: 1px solid #6791FF;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #6791FF;
+}
+
+.form-input {
+    width: 300px;
+}
+
+.form-label {
+    display: inline-block;
+    min-width: 150px;
+    vertical-align: top;
+}
+
+.form-error ul {
+    list-style: none;
+    padding: 0;
+    color: #CC0000;
+}
+
+input, textarea {
+    font-size: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}

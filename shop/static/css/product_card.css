@@ -1,0 +1,220 @@
+a {
+    color: #6791FF; 
+    text-decoration: none;
+}
+
+.navigation-string a:hover {
+    color: #6791FF; 
+    text-decoration: underline; 
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.navigation-string {
+    margin: 18px 60px 18px 60px;
+    width: 1180px;
+    height: 40px;
+    left: 60px;
+    top: 101px;
+    background: #FFFFFF;
+    border: 1px solid #6791FF;
+    box-sizing: border-box;
+    border-radius: 40px;
+    padding: 7px 49px 9px 49px;
+}
+
+.navigation-string p {
+    position: absolute;
+    width: 100%;
+    height: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #6791FF;
+    margin: 0px;
+
+}
+
+.main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .preview {
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 40px;
+    width: 1180px;
+    height: 800px;
+    margin: 0px 59px;
+}
+
+.main .title {
+    width: 1082px;
+    height: 24px;
+    margin: 15px 49px 20px 49px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+
+    color: #000000;
+}
+
+.main .columns {
+    padding: 0px 49px;
+    display: flex;
+    height: 670px;
+}
+
+.main .carousel {
+    display: flex;
+    flex-direction: column;
+    margin-right: 45px;
+    width: 175px;
+    height: 670px;
+}
+
+.main .carousel img {
+    width: 175.5px;
+    height: 202px;
+    border-radius: 10px;
+}
+
+.main .carousel img:not(:first-child) {
+    margin-top: 31px;
+}
+
+
+.main .columns .main-picture {
+    width: 600px;
+    height: 670px;
+}
+
+.main .columns .main-picture img {
+    width: 600px;
+    height: 670px;
+    border-radius: 10px;
+}
+
+.main .right-column {
+    width: 233px;
+    height: 717px;
+    margin: 0px 0px 25px 25px;
+}
+
+.main .right-column .price {
+    width: 225px;
+    min-height: 27px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #000000;
+
+    margin: 20px 0px 25px 0px;
+}
+
+.main .right-column .shop_owner {
+    width: 233px;
+    min-height: 109px;
+    border: 1px solid #BCBCBC;
+    border-radius: 40px;
+}
+
+#text-shop {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+
+    color: #000000;
+
+    margin: 18px 0px 15px 28px;
+}
+
+#output_shop_owner {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+
+    color: #000000;
+    margin: 0px 28px 18px 28px;
+}
+
+.main .review {
+    display: flex;
+    margin: 15px 820px 18px 49px;
+}
+
+#number {
+    margin: 2px 23px 0px 12px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #6791FF;
+}
+
+.description {
+    width: 1181px;
+    min-height: 100px;
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 40px;
+
+    margin: 25px 60px 25px 60px;
+}
+
+#about-product {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    
+    color: #000000;    
+    margin: 17px 1021px 13px 25px;
+}
+
+.description p {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #000000;
+    margin: 0px 25px 25px 25px;
+}

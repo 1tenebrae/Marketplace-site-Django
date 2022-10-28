@@ -1,0 +1,164 @@
+body {
+    overflow: hidden;
+}
+
+.main {
+    height: 891px;
+    width: 1300px;
+}
+
+.text {
+    height: 51px;
+    width: 100%;
+    padding: 85px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.text p {
+    position: absolute;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
+    
+    color: #BCBCBC;
+}
+
+.authorization {
+    width: 340px;
+    height: 64px;
+    margin: 20px 480px;    
+}
+
+.authorization button {
+    position: absolute;
+    width: 340px;
+    height: 64px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #6791FF;
+
+    background: #FFFFFF;
+    border: 2px solid #6791FF;
+    box-sizing: border-box;
+    border-radius: 40px;
+
+    cursor: pointer;
+}
+
+p#1 {
+    width: 152px;
+    height: 39px;
+}
+
+p#2 {
+    width: 67px;
+    height: 46px;
+}
+
+p#3 {
+    width: 446px;
+    height: 51px;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 348.5px;
+}
+
+.search input {
+    width: 603px;
+    height: 46px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+        
+    color: #6791FF;
+    outline:none;
+
+    background: #FFFFFF;
+    border: 2px solid #6791FF;
+    box-sizing: border-box;
+    border-radius: 40px;
+    padding: 15px 30px;
+
+    margin: 0px 0px 36px 0px;
+}
+
+
+.search input::placeholder {    
+    display: none;
+    width: 100%;
+	cursor: text;
+	user-select: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #BCBCBC;
+}
+
+.search input:focus {
+    color: #6791FF;
+    background-color: #fff;
+    border-color: #6791FF;
+    outline: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+
+.search button {
+    width: 219px;
+    height: 55px;
+    background: #6791FF;
+    border: 2px solid #6791FF;
+    box-sizing: border-box;
+    border-radius: 40px;
+    margin: 0px 192.5px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.header #text-site p {
+    position: absolute;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+
+    color: #FFFFFF;
+}
+
+#main-page {
+    padding: 60px 0px 0px 0px;
+}
+
+

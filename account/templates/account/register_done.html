@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Authorization</title>
+
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/register_done.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/font_Ubuntu/stylesheet.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/font_Inter/stylesheet.css' %}">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+
+</head>
+
+<body>
+
+    <div class="background">
+        
+        <div class="wrapper">
+        
+            <div class="content">
+            
+                <div class="header" id="authorization">
+
+                    <div class="menu-header">
+                        <button onclick="myFunction()" class="dropdown-toggle">
+                            <img src="{% static 'pics/Group_1.png' %}" alt="">
+                        </button>
+                    </div>
+
+                    <div id="myDropdown" class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Продавцы</a></li>
+                            <li><a class="dropdown-item" href="#">Услуги</a></li>
+                            <li><a class="dropdown-item" href="#">Товары</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="main page.html" target="_self"><div class="logo"><p>Витрина</p></div></a>
+
+                    <div class="search">
+
+                        <form action="" target="_self">
+                            <input required type="text" placeholder="Поиск">
+                            <button type="submit">Искать</button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <div class="reg">
+
+                    <label class="form-label">Welcome {{ new_user.username }}!</label>
+                    <label class="form-label">Ваш аккаунт успешно зарегистрирован.</label>
+                    <label class="form-label">Теперь Вы можете <a href="{% url 'login' %}">авторизоваться</a>.</label>
+                </div>
+
+                <footer></footer>   
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+    

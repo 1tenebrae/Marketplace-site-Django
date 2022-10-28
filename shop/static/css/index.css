@@ -1,0 +1,240 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a:active, a:hover, a {
+    text-decoration:none !important;
+    color:#FFFFFF;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+.background {
+    position: absolute;
+    width: 1920px;
+    background: #6791FF;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+
+body {
+    display: flex;
+}
+
+.wrapper {
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: auto;
+    background: #FFFFFF; 
+}
+
+.header {
+    width: 1180px;
+    height: 60px;
+    margin: 0px 60px 0px 60px;
+    background: #6791FF;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.header .menu-header {
+    height: 36px;
+    width: 46px;
+    margin: 12px 28.5px 12px 26px;
+    border: none; 
+    outline: none;
+}
+
+.header .menu-header button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    height: 36px;
+    width: 46px;
+}
+
+.header .logo {
+    width: 172px;
+    height: 43px;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 41px;
+    line-height: 47px;
+
+    color: #FFFFFF;
+
+    margin: 5px 51.5px 12px 28.5px;
+
+    cursor: pointer;
+}
+
+.header .logo p {
+    margin: 0px;
+}
+
+.header .search {
+    width: 568px;
+    height: 40px;
+    margin: 11px 15px 11px 11.5px;
+}
+
+
+.header .search form {
+    display: flex;
+    flex-direction: row;
+}
+
+.header .search input {
+    width: 445px;
+    height: 40px;
+
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 40px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+
+    color: #6791FF;
+    padding: 6px 25px 6px 25px;
+    margin: 0px 13px 0px 0px;
+}
+
+.header .search input::placeholder {    
+    height: 40px;
+	cursor: text;
+	user-select: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: #BCBCBC;
+}
+
+.header .search button {
+    width: 123px;
+    height: 40px;
+
+    background: #6791FF;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 40px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+
+    color: #FFFFFF;
+}
+
+.header .sign-in {
+    width: 199px;
+    height: 40px;
+    margin: 11px 21px 11px 15px;
+}
+
+.header .sign-in button {
+    position: absolute;
+    width: 199px;
+    height: 40px;
+
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 40px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: #6791FF;
+}
+
+.header #text-site {
+    margin: 12px 117px 16px 51.5px;
+    height: 32px;
+    width: 659px;
+}
+
+.header .search input:active, input:hover, input:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.header .dropdown ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.header .dropdown ul li:not(:first-child) {
+    margin: 17px 0px 0px 0px;
+}
+
+.header .dropdown ul li:first-child {
+    margin: 20px 0px 0px 0px;
+}
+
+.header .dropdown-menu a {
+    background-color: #6791FF;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;    
+        
+    color: #FFFFFF;
+}
+
+.header .dropdown {
+    width: 176px;
+    height: 142px;
+    position: absolute;
+    top: 49px;
+    z-index: -1;
+}
+
+.header .dropdown .dropdown-menu {
+    position: absolute;
+    width: 176px;
+    height: 142px;
+    margin: 0px;
+    background: #6791FF;
+    box-sizing: border-box;
+    border-radius: 0px 0px 40px 40px;
+}
+
+.header .menu-active {
+    z-index: 1;
+}
+
+::after {
+    z-index: 2;
+}

@@ -1,0 +1,22 @@
+.reg {
+    width: 1180px;
+    height: 817px;
+    margin: 50px 60px 0px 60px;
+}
+
+a:active, 
+a:hover, 
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+.form-label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #6791FF;
+    min-width: 150px;
+}
